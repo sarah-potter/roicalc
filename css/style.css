@@ -1,0 +1,724 @@
+/*
+* Custom Styles for Calculator UI
+* Based on Skeleton V2.0.4
+* Copyright 2018, Sarah Potter
+* www.sarahpotter.net
+*/
+
+/* Typography =============================================================== */
+body{
+	 font-family: "proxima-nova",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 900;
+	letter-spacing: .25px;
+}
+
+h1{
+	font-size: 2.5em;
+	font-weight: 200;
+}
+
+p{
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 400;
+	color: #333333;
+	font-size: 1em;
+    line-height: 1.25;
+}
+
+
+
+/* Links =============================================================== */
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+body{
+	background: #F2F2F2;
+}
+
+.container{
+	max-width: 1440px;
+}
+.row{
+	margin: 0 auto;
+}
+
+button{
+	border: none !important;
+}
+
+button.fullreport a{
+	background: rgb(255,230,87); 
+	background: -moz-linear-gradient(top, rgba(255,230,87,1) 0%, rgba(241,206,3,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(255,230,87,1) 0%,rgba(241,206,3,1) 100%); 
+	background: linear-gradient(to bottom, rgba(255,230,87,1) 0%,rgba(241,206,3,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe657', endColorstr='#f1ce03',GradientType=0 ); /* IE6-9 */
+	
+	font-weight: bold;
+	color: #010101;
+	font-size: 1.5em;
+	text-transform: none;
+	letter-spacing: 0px;
+	border: 0;
+	/* button bg: */
+	background-image: linear-gradient(-1deg, #F1CE03 0%, #FFE657 100%);
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+	border-radius: 5px;
+	padding: 0.75em 1.25em;
+    height: 44px;
+    line-height: 1;
+    
+    border: none !important;
+}
+button.fullreport a:hover{
+	color: #f1ce03;
+	background: #010101;
+	text-decoration: none;
+
+	}
+
+
+/* ============================== */
+/* HEADER ======================= */
+/* ============================== */
+#navigation{
+	background: #FFFFFF;
+	top: 0;
+	width: 100%;
+	display: block;
+	z-index: 999;
+	padding: 1em 0;
+}
+#header-logo{
+	display: block;
+	float: left;
+	max-width: 300px;
+}
+#header-logo img{
+	width: 200px;
+	max-width: 200px;	
+}
+#page-title h1{
+	text-align: right;
+    padding: .5em 0 0 0;
+    margin-bottom: 0;
+}
+
+
+/* ============================== */
+/* HERO ========================= */
+/* ============================== */
+#hero{
+	display: block;
+	width: 100%;
+	min-height: 12em;
+}
+#hero:before {
+	background: -moz-linear-gradient(left, rgba(1,1,1,0) 20%, rgba(1,1,1,1) 50%);
+	background: -webkit-linear-gradient(left, rgba(1,1,1,0) 20%,rgba(1,1,1,1) 50%); 
+	background: linear-gradient(to right, rgba(1,1,1,0) 20%,rgba(1,1,1,1) 50%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00010101', endColorstr='#010101',GradientType=1 ); 
+	left: 0;
+	width:100%;
+	height:12em;
+	content: " ";
+	position: absolute;
+	  z-index: -9;
+	}
+	
+#hero-background.em{
+	background: url('../images/nasa-placeholder.jpg') center center no-repeat;
+	position: absolute;
+	width: 60%;
+	height: 12em;
+	background-size: cover;
+	background-position-x: 0;
+	z-index: -10;
+}
+ #hero-background.am{
+	background: url('../images/nasa-placeholder.jpg') 40% 40% no-repeat;
+	position: absolute;
+	width: 60%;
+	height: 12em;
+	background-size: cover;
+	background-position-x: 0;
+	z-index: -10;
+	}
+#hero .container{
+	vertical-align: middle;
+	padding-top: 3.5em;
+}
+#hero h2{
+	color: #FFF;
+	text-align: right;
+	font-weight: 200;
+	font-size: 1.75em;
+	margin-left: 50%;
+}
+
+/* ============================== */
+/* CALCULATOR ================ */
+/* ============================== */
+#calculator{
+	padding-top: 3em;
+}
+.highlight-color{
+	color: #60B7C0;
+	font-weight: bold;
+}
+
+#em-questions .col-3{
+	border: 1px solid #D5D5D5;
+	background: #FFF;
+	margin-right: 2%;
+	max-width: 23.5%;
+	padding: 2em 1.5em;
+}
+#em-questions .col-3:last-of-type{
+	margin-right: 0;
+}
+#em-questions{
+	width: 100%;
+	text-align: center;	
+}
+#calculator .col-3:focus-within{
+	box-shadow: 0px 2px 10px 0 rgba(0,0,0,0.30);
+	-webkit-transition: ease-in .2s;
+    transition: ease-in .2s;
+}
+#calculator input{
+	border: none !important;
+	border-radius: 0px !important;
+	border-bottom: 2px solid #D5D5D5 !important;
+}
+#calculator input:focus{
+	background: #f1f1f1;
+}
+#calculator input[type="text"]{
+	color: #60B7C0;
+	text-align: center;
+	font-size: 2em;
+}
+.question input[type="text"]::-webkit-input-placeholder{
+	color: #60B7C0;
+	font-size: 1em;
+	text-align: center;
+	opacity: .5;
+}
+.question{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3em;
+}
+.question .icon{
+	max-height: 25%;
+	margin-bottom: 1em;
+}
+.question-input{
+    width: 100%;
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    height: 25%;
+	padding: 0 2em;
+}
+#em-questions input{
+	margin-bottom: 0;
+	max-width: 70%;
+}
+p.instruction-text{
+	position: relative;
+	font-style: italic;
+	font-size: .85em;
+	padding-top: .5em;
+}
+
+/* Asset Management Styles */
+#am-questions{
+	margin: 0 auto;
+}
+#am-questions p{
+	font-size: 1.1em;
+}
+#am-questions .question{
+	height: auto;
+	border: 1px solid #D5D5D5;
+	padding: 1.5em 0 2em 1.5em;
+	background: #FFF;
+	margin-bottom: 3%;
+	min-height: 6em;
+	}
+#am-questions .question .icon{
+    float: left;
+    display: block;
+    max-width: 12%;
+    width: 12%;
+    height: 4em;
+    margin-right: 1em;
+}
+#am-questions  p.question-text{
+    width: 73%;
+    padding: 4% 2% 2% 15%;
+    margin-bottom: 00;
+    border-right: 1px solid #D5D5D5;
+}
+#am-questions .question-input{
+    position: relative;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    float: right;
+    padding: 0 2%;
+    text-align: center;
+}
+#am-questions .question:focus-within{
+	box-shadow: 0px 2px 10px 0 rgba(0,0,0,0.30);
+	-webkit-transition: ease-in .2s;
+    transition: ease-in .2s;
+}
+#calculator #am-questions .question-input input[type="text"]{
+    position: absolute;
+    right: 0.1em;
+    max-width: 64%;
+    margin-right: .5em;
+    top: -1.25em;
+}
+ #am-questions .unit{
+    position: absolute;
+    left: 0.75em;
+    top: -1.25em;
+    font-size: 2em;
+    color: #60B7C0;
+ }
+  #am-questions .unit.percent{
+    position: absolute;
+    right: -2.5em;
+    width: 20%;
+    margin: 0 auto;
+  }
+#am-questions p.instruction-text{
+	font-size: .75em;
+	max-width: 100%;
+    padding-left: 2em;
+    margin-bottom: 0;
+}
+span.question-subtext{
+	font-size: .85em;
+	font-style: italic;
+	width: 73%;
+    margin-bottom: 00;
+    padding-right: 18%;
+}
+
+ #am-questions  #q7 p.question-text{
+ 	line-height: 1;
+ 	padding-top: 1%;
+}
+
+#am-questions #q7 .question-input{
+	top: -3em;
+}
+
+
+/* Toggle Table */
+#am-extended-filters{
+	width: 100%;
+    display: block;
+    min-height: 4em;
+    margin: 2em auto;
+}
+#am-extended-filters h3{
+	font-size: 1.25em;
+	max-width: 75%;
+	color: #666666;
+	float: left;
+}
+#am-extended-filters button{
+	float: right;
+	height: auto;
+	max-height: 25px;
+}
+#am-extended-filters button input{
+	max-height: 30px;
+}
+
+.filter-instruction{
+ 	float: right;
+    font-size: .75em;
+    text-align: right;
+    clear: both;
+    font-weight: bold;
+    font-style: italic;
+	color: #010101;
+	margin-bottom: 2em;
+}
+
+.btn-primary, .btn-primary:hover{
+	background-color: #60B7C0;
+	border: #60B7C0;
+}
+
+#am-questions input[type="button"]{
+	height: auto;
+	max-height: 30px;
+	overflow: hidden;
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { 
+	border-radius: 25px;
+	max-height: 30px !important;	
+    }
+#am-questions .toggle-group{
+	width: 175%;  
+  } 
+
+#am-questions  .toggle.ios .toggle-handle {
+	border-radius: 50%;
+    background: #FFF;
+    height: 2.5em;
+    width: 2.5em;
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+	overflow: visible;
+    top: .25em;
+    left: 1.5em;
+   }
+span.toggle-handle.btn.btn-default{
+
+}
+#am-questions  .toggle.off .toggle-group {
+    left: -87%;
+}
+
+  
+#am-questions  .toggle-off{
+    background: rgba(0,0,0, .2);
+    border-radius: 50px;
+    height: 16px;
+    width: 46%;
+    left: 6em;
+    top: .75em;
+}
+#am-questions  .toggle-on{
+	height: 24px;
+}
+
+#am-questions btn{
+	
+}
+.extraFilters {
+    display: none;
+}
+.extraFilters.in {
+  display: block;
+}
+
+#filter-table{
+	background: #FFF;
+	border: 1px solid #D5D5D5;
+	clear: both;
+	width: 100%;
+	padding: 1em;
+}
+#filter-table h4{
+	font-size: 1.25em;
+	font-weight: 200;
+}
+#filter-table table{
+	width: 100%;
+	margin: 0 auto;
+}
+#filter-table tr{
+	width: 100%;
+}
+#filter-table th{
+	color: #60B7C0;
+	text-transform: uppercase;
+	font-size: .85em;
+}
+#filter-table td{
+	padding: .5em 0;
+}
+
+#filter-table th:first-child, td:first-child{
+	width: 8%;
+	margin: 0 auto;
+	text-align: center;
+}
+#calculator #filter-table input{
+    max-width: 100px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+#calculator #filter-table input[type="text"]{
+	color: #333;
+	font-size: 1.25em;
+	font-weight: bold;
+	background: #EEE;
+	border-bottom: none !important;
+}
+#filter-table input[type="checkbox"]{
+    margin-top: -.5em !important;
+    margin-left: -.5em !important;
+}
+#filter-table input[type="text"]::-webkit-input-placeholder{
+	font-size: 1em;
+	text-align: center;
+	opacity: .5;
+}
+
+/* ============================== */
+/* RESULTS ================ */
+/* ============================== */
+#output-row{
+	border: 1px solid #D5D5D5;
+	padding: 2em 0;
+	text-align: center;
+    margin-top: 3em;
+    background: #FFF;
+}
+#results .col-4{
+	border-right: 1px solid #D5D5D5;
+	padding: 0 2em;
+}
+#results .col-4:last-of-type, #results.am .col-4:nth-child(3){
+	border: none;
+}
+
+.microToolOutput{
+	color: #60B7C0;
+	font-size: 3em;
+}
+.answer-text{
+	font-size: 1em;
+}
+#results #results-button{
+	margin-top: 16%;
+}
+#results.am #results-button{
+	margin: 2em auto 0 auto;
+}
+
+/* Call to Action */
+#cta{
+    padding: 5% 0%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+}
+#cta h4{
+	font-size: 1.25em;
+	font-weight: 200;
+	line-height: 1;
+	padding: .6em 1em .6em 0;
+	text-align: right;
+}
+
+#cta button{
+	float: left;
+}
+
+/* ============================== */
+/* MOBILE STYLES ================ */
+/* ============================== */
+
+@media (max-width: 1300px) {
+	
+	p{
+		font-size: 1em;
+	}
+	
+
+}/* End 1300px mobiles styles */
+
+
+@media (max-width: 1100px) {
+	
+	#cta{
+		
+	}
+	#cta h4{
+		width: 100%;
+		text-align: right;
+		padding: 0;
+	}
+	#cta button{
+		margin: 0 auto 3em auto;
+	}
+	
+	#am-questions .col-md-6{
+		min-width: 65% !important;
+		margin: 0 auto;
+	}
+
+
+}/* End 1100px mobiles styles */
+
+
+@media (max-width: 990px) {
+	
+	#page-title h1{
+	    font-size: 2em;
+	}
+	
+	#hero h2{
+		font-size: 1.5em;
+		margin-left: 40%;
+	}
+	#results #results-button{
+		margin: 16% 0 0 -15%;
+	}
+	#am-questions .col-md-6{
+		min-width: 100% !important;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+
+}/* End 990px mobiles styles */
+
+
+@media (max-width: 749px) {
+	
+	#header-logo img{
+		max-width: 160px;
+	}
+	
+	#page-title h1{
+	    margin-bottom: 0;
+	    font-size: 1.5em;
+	}
+	
+	#hero{
+		min-height: 10em;
+	}
+	#hero .container{
+		padding-top: 2.5em;
+	}
+	#hero h2{
+		font-size: 1.25em;
+		margin-left: 40%;
+	}
+	#results .col-4{
+		padding: 0 .5em;
+	}
+	
+	#results #results-button{
+		margin: 30% 0 0 -10%;
+	}
+	
+	#em-questions .col-3{
+		min-width: 48%;
+		margin-right: 4%;
+		margin-bottom: 4%;
+	}
+	#em-questions .col-3:nth-child(2), #em-questions .col-3:nth-child(4){
+		margin-right: 0;
+		}
+
+	#cta .col-sm-8{
+		min-width: 100%;
+	}
+	#cta h4{
+		text-align: center;
+		padding: 0 10%;
+	}
+	#cta .col-sm-4{
+		min-width: 100%;
+		margin: 0 auto !important;
+		text-align: center;	
+		}
+	#cta button{
+		float: none;
+	}
+	
+}/* End 750px mobiles styles */
+
+@media (max-width: 680px) {
+	
+	#results{
+		padding: 1em 0;
+	}
+	#results .col-4{
+		min-width: 90%;
+		margin: 0 auto;
+		border-right: none;
+		border-bottom: 1px solid #D5D5D5;
+	}
+	.answer-text{
+		margin-bottom: 0.5em;
+	}
+	.microToolOutput{
+		font-size: 2.5em;
+	}
+	#results #results-button {
+    	margin: 5% 0 0 0%;
+	}
+	#calculator{
+		padding-top: 4%;
+	}
+	
+}/* End 680px mobiles styles */
+		
+@media (max-width: 549px) {
+	
+	/* 	General */
+	p{
+		font-size: .9em;
+		margin-bottom: .75em;
+	}
+	h2{
+		font-size: 2em;
+		margin-bottom: .25em;
+	}
+	#hero-background{
+		width: 50%;
+		height: 10em;
+		background-position: center;
+	}
+	
+	#navigation{
+		padding: .5em 0;
+	}
+	#header-logo{
+		display: block;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#header-logo img{
+		max-width: 160px;	
+	}
+	#page-title h1{
+		text-align: center;
+	    padding: .75em 0 .25em 0;
+	    margin-bottom: 0;
+	    font-size: 1.75em;
+	}
+		
+	#em-questions .col-3{
+		min-width: 100%;
+		margin-right: 0%;
+		margin-bottom: 4%;
+	}
+
+	
+
+}/* End 549px mobiles styles */	
+
+
+@media (max-width: 400px) {
+	
+
+}/* End 400px mobiles styles */

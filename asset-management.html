@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="SarahPotter.net">
+	
+	<!-- Title of Page -->
+	<title>Return on Investment Calculator | UI by Sarah Potter</title>
+	
+	<meta name="description" content="Block by block, we're Revolutionizing Rideshare">
+	<meta name="author" content="SarahPotter.net">
+
+	<!-- FONT-->
+	<link rel="stylesheet" href="https://use.typekit.net/rer7sak.css">
+
+
+	<!-- CSS   –––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap-toggle.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body id="page-top" data-spy="scroll" class="top">
+	
+	<!-- Navigation –––––––––––––––––––––––––––– -->
+	<section id="navigation">
+		<div class="container">
+			<div id="header-logo">
+			<!-- Image logo-->
+			<a href="http://sarahpotter.net" class="navbar-brand page-scroll" target="_blank">
+				<img src="images/sarah-potter-faux-logo-red.png" alt="Logo" class="logo">
+			</a>
+		</div> 
+		
+		<div id="page-title">
+			<h1>Return on Investment Calculator - Alternate</h1>
+		</div>
+			
+		</div><!-- End Navigation Container -->
+	</section>
+	
+	
+	<!-- Hero ––––––––––––––––––––––––––––––––– -->
+	<section id="hero">
+		<div id="hero-background" class="am"></div>
+		<div class="container">
+			<div id="hero-subhead">
+				<h2>Learn just how much you can save by answering the 7 questions below!</h2>
+			</div>
+		</div>
+	</section>	
+	
+	
+	  
+	<!-- Results Section	–––––––––––––––––––––––––––– -->
+	<section  id="results" class="am">
+		<div class="container">
+			<!-- Results Row ––––––––––––––––––––––––––––––––––––––– -->
+			<div id="output-row" class="row">
+			
+				<!-- Output #1 -->
+			    <div class="col-4">			
+					<div data-dbentity="EnvOptSpoilageRed">
+						<div  class="microToolOutput">50</div>
+						<p class="answer-text">Clinical staff hours saved which could be applied towards patient care</p>
+					</div>
+			    </div>
+			
+				<!-- Output #2 -->
+			    <div class="col-4">
+		      		<div data-dbentity="EnvLaborRed">
+					    <div  class="microToolOutput">1234</div>
+				    	<p class="answer-text">Non-clinical staff hours saved annually that may allow you to optimize your resources</p>
+					</div>
+			    </div>
+			    
+				<!-- Output #3 -->
+			    <div class="col-4">
+			     	<div data-dbentity="EnvLaborRed">
+					    <div  class="microToolOutput">26000</div>
+				    	<p class="answer-text">Amount saved from reduced shrinkage and fleet optimization</p>
+					</div>
+				 </div>	
+				  
+				  <!-- Full Report Button -->
+				 <div id="results-button" class="am">
+					 <button type="button" class="fullreport"><a href="#">See Full Report</a></button>
+				 </div>
+			</div><!--  End output row -->
+		</div><!--  End Results Container -->
+	</section>
+
+	<!-- Calculator Section  –––––––––––––––––––––––––––––––––––– -->
+	<section id="calculator">
+		<div class="container">
+						
+			<div  id="am-questions" class="row">
+				<div class="col-md-6 offset-md-3">
+					
+				<!-- Question 1 -->
+				<div id="q1" class="question" data-dynamicquestiontext="EnvFridgeCount_lbl">
+					<img class="icon" src="images/icons/hospital.svg">
+					<p class="question-text">How many patient beds in your facility?</p>
+					<div class="question-input">
+						<input id="calcInput" class="regInput microToolInput" type="text" data-format="1" data-dbentity="EnvFridgeCount" placeholder="103" value=""/> 
+					</div>
+				</div><!--  end Q1 -->
+				
+				
+				<!-- Question 2 -->
+				<div id="q2" class="question" data-dynamicquestiontext="EnvHours_lbl">
+					<img class="icon" src="images/icons/growth.svg">
+					<p class="question-text">What is your estimated annual growth rate in the next 5 years?</p>
+					<div class="question-input">
+						<input  id="calcInput" class="regInput microToolInput" type="text" data-format="1" data-dbentity="EnvHours" placeholder="10" value=""/>
+						<p class="instruction-text">minutes per device per day</p> 
+					</div>
+				</div><!--  end Q2 -->
+					
+					
+				<!-- Filter Table –––––––––––––––––––––––––––––––––––– -->	
+					
+				<div id="am-extended-filters">
+		
+					<h3>Tell us about the assets you plan to manage:</h3> 
+					
+					<!-- Toggle -->								
+				     <button type="button" data-toggle="extraFilters" data-target="#filter-table">	
+				     <label for="someSwitchOptionDefault" class="label-default"></label>	        	
+			        	<input type="checkbox" data-size="medium" data-toggle="toggle" data-onstyle="primary" data-on=" " data-off=" " data-style="ios" id="someSwitchOptionDefault" name="someSwitchOption001" type="checkbox">			         	
+			        </button>
+                    
+			        
+			        <span class="filter-instruction"> Summary / Detailed</span> 
+			        
+			         <div id="filter-table" class="extraFilters">		
+						 <h4>Please select the asset types you intend to monitor, and provide current quantities and average cost per unit:</h4> 
+						 <table>     	
+							<!-- Heading Row -->
+							<tr>
+							    <th></th>
+							    <th>Type</th>
+							    <th>QUANTITY</th>
+							    <th>COST PER UNIT</th>
+							</tr>
+
+							<!--   Beds -->
+							<tr>
+							    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td class="microToolInput" data-dbentity="TypeAsset.1">Beds</td>
+							    <td><input id="amBeds" type="text" value="" placeholder="400" class="regInput microToolInput" data-dbentity=”QtyAsset.1” data-analyticsname=”Number of Beds”></td>
+							    <td><input id="amBeds" type="text" value="" placeholder="3300" class="regInput microToolInput" data-dbentity=”PriceAsset.1” data-analyticsname=”Price of Beds”></td>
+							</tr>
+							  
+							<!--   Syringe Pumps -->
+							<tr>
+							    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td>PCA / Syringe Pumps</td>
+							    <td><input id="pca" type="text" value="" class="regInput microToolInput" data-dbentity=”QtyAsset.2”  placeholder="400" data-analyticsname=”Number of PCA / Syringe Pumps”></td>
+							    <td><input id="amBeds" type="text" value="" class="regInput microToolInput" data-dbentity=”PriceAsset.2” placeholder="2500" data-analyticsname=”Price of PCA / Syringe Pumps”></td>
+							</tr>
+							  
+							<!-- Telemetry Packs -->
+							<tr>
+							    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td>Telemetry Packs</td>
+							    <td><input id="telemetry" type="text" value="" class="regInput microToolInput" data-dbentity=”QtyAsset.3”  placeholder="" data-analyticsname=”Number of Telemetry Packs”></td>
+							    <td><input id="telemetry" type="text" value="" class="regInput microToolInput" data-dbentity=”PriceAsset.3” placeholder="" data-analyticsname=”Price of Telemetry Packs”></td>
+							</tr>
+							  
+							  
+							<!--  Infusion Pumps -->
+							<tr>
+							    <td> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td>Infusion Pumps</td>
+							    <td><input id="infusionPumps" type="text" value="" class="regInput microToolInput" data-dbentity=”QtyAsset.4”  placeholder="880" data-analyticsname=”Number of Infusion Pumps”></td>
+							    <td><input id="infusionPumps" type="text" value="" class="regInput microToolInput" data-dbentity=”PriceAsset.4” placeholder="2500" data-analyticsname=”Price of Infusion Pumps”></td>				  
+							</tr>
+							   
+							<!--  SCDs -->
+							<tr>
+							    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td>SCDs</td>
+							    <td><input id="SCDs" type="text" value="" class="regInput microToolInput" data-dbentity=”QtyAsset.5”  placeholder="" data-analyticsname=”Number of SCDs”></td>
+							    <td><input id="SCDs" type="text" value="" class="regInput microToolInput" data-dbentity=”PriceAsset.5” placeholder="" data-analyticsname=”Price of SCDs”></td>
+							</tr>
+							  
+							<!--   Feeding Pumps -->
+							<tr>
+							    <td> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td>Feeding Pumps</td>
+							    <td><input id="SCDs" type="text" value="" class="regInput microToolInput" data-dbentity=”QtyAsset.6”  placeholder="" data-analyticsname=”Number of Feeding Pumps”></td>
+							    <td><input id="SCDs" type="text" value="" class="regInput microToolInput" data-dbentity=”PriceAsset.6” placeholder="" data-analyticsname=”Price of Feeding Pumps”></td>
+							</tr>
+							  
+							<!-- Portable EKGs -->
+							<tr>
+							    <td> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td>Portable EKG</td>
+							    <td><input id="ekgs" type="text" value="" class="regInput microToolInput" data-dbentity=”QtyAsset.7”  placeholder="" data-analyticsname=”Number of Portable EKG”></td>
+							    <td><input id="ekgs" type="text" value="" class="regInput microToolInput" data-dbentity=”PriceAsset.7” placeholder="" data-analyticsname=”Price of Portable EKG”></td>
+							</tr>
+							  
+							<!--   Bladder Scanners -->
+							<tr>
+							    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+							    <td>Bladder Scanners</td>
+							    <td><input id="bladderScanners" type="text" value="" class="regInput microToolInput" data-dbentity=”QtyAsset.8”  placeholder="40" data-analyticsname=”Number of Bladder Scanners”></td>
+							    <td><input id="bladderScanners" type="text" value="" class="regInput microToolInput" data-dbentity=”PriceAsset.8” placeholder="6000" data-analyticsname=”Price of Bladder Scanners”></td>
+							</tr>		 
+		        		</table>
+		        		
+			        </div><!-- End expanded table -->
+			    </div><!-- End filter section -->
+				
+				
+				<!-- Alternate Questions (3 & 4)  –––––––––––––––––––––––––––––––––––– -->
+				<div class="am-alternate-questions" data-dynamicshowhide="otherheader_show">
+					<div class="microToolInclude" data-dbentity="otherheader" style="display:visible">	
+						
+						<!-- Question 3 (Alternate) -->
+						<div id="q3" class="question" data-dynamicquestiontext="EnvFridgeCount_lbl">
+							<img class="icon" src="images/icons/database.svg">
+							<p class="question-text">How many assets in total are you going 
+		to monitor?</p>
+							<div class="question-input">
+								<input id="calcInput" class="regInput microToolInput" type="text" data-format="1" data-dbentity="EnvFridgeCount" placeholder="840" value=""/> 
+							</div>
+						</div><!--  end Q3 -->
+						
+						<!-- Question 4 (Alternate)-->
+						<div id="q4" class="question" data-dynamicquestiontext="EnvHours_lbl">
+							<img class="icon" src="images/icons/money.svg">
+							<p class="question-text">What is the average cost per unit for these monitored assets?</p>
+							<div class="question-input">
+								<input  id="calcInput" class="regInput microToolInput" type="text" data-format="1" data-dbentity="EnvHours" placeholder="10" value=""/>
+								<p class="instruction-text">minutes per device per day</p> 
+							</div>
+						</div><!-- end Q4 -->
+							
+					</div>
+				</div><!-- End Alternate Questions -->
+				
+				<!-- Question 5 -->
+			 	<div id="q5" class="question" data-dynamicquestiontext="EncFridgeValue_lbl">
+					<img class="icon" src="images/icons/shrinkage.svg">
+					<p class="question-text">What is your current annual shrinkage / loss / theft rate?</p>
+					<div class="question-input">
+						<input id="calcInput" class="regInput microToolInput" type="text" data-format="1" data-dbentity="EncFridgeValue" placeholder="2" value=""/><p class="instruction-text">of fleet</p> 
+					</div>
+				</div><!--  end Q5 -->
+				
+				<!-- Question 6 -->
+				<div id="q6" class="question" data-dynamicquestiontext="EnvSpoilageRate_lbl">
+					<img class="icon" src="images/icons/equipment.svg">
+					<p class="question-text">How much time do your <span class="highlight-color"> clinical</span> staff waste on searching equipment daily? </p>
+					<div class="question-input">
+						<input id="calcInput" class="regInput microToolInput" type="text" data-format="1" data-dbentity="EnvSpoilageRate" placeholder="5" value="" /> 
+						<p class="instruction-text">hours per day per clinical staff member</p>
+					</div>
+				</div><!--  end Q6 -->
+				
+				
+				<!-- Question 7 -->
+				<div id="q7" class="question" data-dynamicquestiontext="EnvSpoilageRate_lbl">
+					<img class="icon" src="images/icons/time.svg">
+					<p class="question-text">How much time do your <span class="highlight-color">non-clinical</span> staff waste on searching equipment daily?
+					<br />
+					<span class="question-subtext"> Consider tasks such as servicing (including planned maintenance), transporting, collecting (in case of a recall) and running inventory for it.</span></p>						
+					
+					<div class="question-input">
+						<input id="calcInput" class="regInput microToolInput" type="text" data-format="1" data-dbentity="EnvSpoilageRate" placeholder="5" value="" /> 
+						<p class="instruction-text">hours per day per non-clinical staff member</p>
+					</div>
+				</div><!-- end Q7 -->
+				
+				
+				</div>
+			</div><!--  End AM question row -->
+	
+			<!-- 	Cta Row  ––––––––––––––––––––––––––––––––––––––– -->
+			<div id="cta" class="row">
+				<div class="col-sm-8">
+					<h4>Want more information? Click to get your results sent to you.</h4>
+				</div>
+				<div class="col-sm-4">
+					<button type="button" class="fullreport" href="#"><a href="#">See Full Report</a></button>
+				</div>
+			</div><!--  End CTA Row -->
+		
+		</div><!-- End calculator container -->
+	</section>
+
+
+<!-- End Document  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+	<!-- jQuery-->
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	
+	<!-- Bootstrap Core JavaScript-->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- Plugin JavaScript-->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/device.min.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/jquery.parallax.min.js"></script>
+	<script src="js/jquery.swipebox.min.js"></script>
+	<script src="js/wow.min.js"></script>
+    <script src="js/smoothscroll.min.js"></script>
+    <script src="js/bootstrap-toggle.min.js"></script>
+    
+	
+	<!-- Custom JavaScript-->
+	<script type="text/javascript" src="js/mainstay/main.js?seed=1"></script>
+	<script type="text/javascript" src="js/mainstay/data.js?seed=1"></script>
+	
+	<script src="js/filter.js" type="text/javascript"></script>
+
+</html>
